@@ -28,20 +28,20 @@
                 <h:panelGroup styleClass="form-block" layout="block">
                     <h:outputLabel for="nome" value="Nome"/>
                     <h:inputText id="nome" size="50"
-                         label="Nome" maxlength="100"/>
+                                 label="Nome" maxlength="100"/>
                 </h:panelGroup>
                 <h:panelGroup styleClass="form-block" layout="block">
                     <h:outputLabel for="endereco" value="Endereço"/>
                     <h:inputText id="endereco" size="50"
-                          styleClass="ui-inputfield" label="Endereço" maxlength="80"/>
+                                 styleClass="ui-inputfield" label="Endereço" maxlength="80"/>
                 </h:panelGroup>
                 <h:panelGroup styleClass="form-block" layout="block">
                     <h:outputLabel for="cidade" value="Cidade"/>
                     <h:inputText id="cidade" size="50"
-                            styleClass="ui-inputfield" label="cidade" maxlength="50"/>
+                                 styleClass="ui-inputfield" label="cidade" maxlength="50"/>
                     <h:outputLabel for="estado" value="Estado"/>
                     <h:inputText id="estado" size="4"
-                            styleClass="ui-inputfield" label="Estado" maxlength="2"/>
+                                 styleClass="ui-inputfield" label="Estado" maxlength="2"/>
                 </h:panelGroup>
                 <h:panelGroup styleClass="form-block" layout="block">
                     <h:outputLabel for="cep" value="CEP"/>
@@ -54,6 +54,13 @@
                     <h:inputText id="fone" label="Fone" size="15"/>
                     <h:outputLabel for="celular" value="Celular"/>
                     <h:inputText id="celular" label="Celular" size="15"/>
+                </h:panelGroup>
+
+                <h:panelGroup>
+                    <h:commandButton value="Login" action="#{cadastrarBean.irLogin}"> 
+                    </h:commandButton>
+                    <h:commandButton value="Administrador" action="#{cadastrarBean.irAdmin}">
+                    </h:commandButton>
                 </h:panelGroup>
             </h:panelGroup>
             <h:messages/>

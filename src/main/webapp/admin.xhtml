@@ -17,6 +17,39 @@
 
     <ui:define name="content">
         <h:form>
+            <h:panelGroup>
+                
+                
+
+                <h:panelGroup>
+                    <h:dataTable id="items"
+                                 value="#{appBean.listaUsuarios}"
+                                 var="item">
+                        <h:column >
+                            <f:facet name="header">
+                                <h:outputText value="Nome" />
+                            </f:facet>
+                            <h:outputText value="#{item.login}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Data e Hora"/>
+                            </f:facet>
+                            <h:outputText value="#{item.data}"/>
+                        </h:column>
+                    </h:dataTable> 
+
+
+                </h:panelGroup>
+
+
+                <h:panelGroup>
+                    <h:commandButton value="Login" action="#{adminBean.irLogin}"> 
+                    </h:commandButton>
+                    <h:commandButton value="Cadastrar" action="#{adminBean.irCadastrar}">
+                    </h:commandButton>
+                </h:panelGroup>
+            </h:panelGroup>
         </h:form>
     </ui:define>
 
