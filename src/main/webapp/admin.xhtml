@@ -18,8 +18,18 @@
     <ui:define name="content">
         <h:form>
             <h:panelGroup>
-                
-                
+
+                <h:panelGroup>
+                    <h:outputLabel for="user" value="Usuário"/>
+
+                    <ui:insert name="top">
+                        <a href="http://www.ct.utfpr.edu.br" target="_blank"><img src="imagens/usuario.png" alt=""/></a>
+                    </ui:insert>
+                    
+                    <h:outputLabel for="admin2" value="[administrador]" rendered="#{loginBean.adm}"/>
+
+                </h:panelGroup>
+
 
                 <h:panelGroup>
                     <h:dataTable id="items"
